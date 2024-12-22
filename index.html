@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartão de Visitas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .card {
+            width: 450px;
+            height: 250px;
+            border: 3px solid #248031;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #248031;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 {
+            flex: 1;
+            font-size: 24px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #ffffff;
+            flex: 1;
+        }
+
+        aside {
+            flex: 1;
+            border-right: 1px solid #ddd;
+            padding-right: 20px;
+        }
+
+        aside h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        aside ul li span {
+            margin-left: 10px;
+        }
+
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -10px;
+            left: 10px;
+        }
+
+        .logo img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .back {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+            border: 3px solid #248031;
+            background: #333;
+            color: #ffffff;
+            width: 450px;
+            height: 250px;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .back img.foto {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            object-fit: cover;
+            margin: 10px 0;
+        }
+
+        .back h3 {
+            margin: 10px 0;
+        }
+
+        .back footer {
+            position: absolute;
+            bottom: 0;
+            background: #248031;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .line-image {
+            position: absolute;
+            top: 12%;
+            left: 37%;
+            transform: translate(-50%, -50%) rotate(-50deg);
+            width: 50px;
+            height: auto;
+            border: none;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            background: #248031;
+            color: #fff;
+        }
+
+        .contact-info span {
+            font-size: 15px;
+        }
+
+        .contact-info .social {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <header>
+                <h1>Ana Letícia Araújo Nunes</h1>
+                <p>Arquiteta</p>
+            </header>
+            <main>
+                <aside>
+                    <h2>Contato</h2>
+                    <ul class="contact-info">
+                        <li>
+                            <span>Telefone: (85) 9 9998-5809</span>
+                        </li>
+                        <li>
+                            <span>Email: a.nunes@aluno.ifce.edu.br</span>
+                        </li>
+                        <li>
+                            <span class="social">Instagram: <a href="https://www.instagram.com/http.ash_ley/?locale=en_US&hl=en" target="_blank">@http.ash_ley</a></span>
+                        </li>
+                        <li>
+                            <span class="social">GitHub: <a href="https://github.com/leticia510" target="_blank">leticia510</a></span>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="logo">
+                </div>
+            </main>
+            <footer>
+                <p>Seu nome e seu negócio - © Todos os Direitos Reservados</p>
+            </footer>
+        </div>
+
+        <div class="back">
+            <img src="img/foto.jpeg" alt="foto" class="foto">
+            <img src="img/linha.png" class="line-image" alt="linha">
+            <h3>Ana Letícia Araújo Nunes</h3>
+            <footer>
+                <p>Formada em Arquitetura e Urbanismo pela UFC</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
